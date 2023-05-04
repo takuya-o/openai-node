@@ -43,7 +43,7 @@ export declare const ChatCompletionRequestMessageRoleEnum: {
     readonly User: "user";
     readonly Assistant: "assistant";
 };
-export declare type ChatCompletionRequestMessageRoleEnum = typeof ChatCompletionRequestMessageRoleEnum[keyof typeof ChatCompletionRequestMessageRoleEnum];
+export type ChatCompletionRequestMessageRoleEnum = typeof ChatCompletionRequestMessageRoleEnum[keyof typeof ChatCompletionRequestMessageRoleEnum];
 /**
  *
  * @export
@@ -68,7 +68,7 @@ export declare const ChatCompletionResponseMessageRoleEnum: {
     readonly User: "user";
     readonly Assistant: "assistant";
 };
-export declare type ChatCompletionResponseMessageRoleEnum = typeof ChatCompletionResponseMessageRoleEnum[keyof typeof ChatCompletionResponseMessageRoleEnum];
+export type ChatCompletionResponseMessageRoleEnum = typeof ChatCompletionResponseMessageRoleEnum[keyof typeof ChatCompletionResponseMessageRoleEnum];
 /**
  *
  * @export
@@ -189,7 +189,7 @@ export interface CreateAnswerRequest {
  * Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.
  * @export
  */
-export declare type CreateAnswerRequestStop = Array<string> | string;
+export type CreateAnswerRequestStop = Array<string> | string;
 /**
  *
  * @export
@@ -336,7 +336,7 @@ export interface CreateChatCompletionRequest {
  * Up to 4 sequences where the API will stop generating further tokens.
  * @export
  */
-export declare type CreateChatCompletionRequestStop = Array<string> | string;
+export type CreateChatCompletionRequestStop = Array<string> | string;
 /**
  *
  * @export
@@ -672,13 +672,13 @@ export interface CreateCompletionRequest {
  * The prompt(s) to generate completions for, encoded as a string, array of strings, array of tokens, or array of token arrays.  Note that <|endoftext|> is the document separator that the model sees during training, so if a prompt is not specified the model will generate as if from the beginning of a new document.
  * @export
  */
-export declare type CreateCompletionRequestPrompt = Array<any> | Array<number> | Array<string> | string;
+export type CreateCompletionRequestPrompt = Array<any> | Array<number> | Array<string> | string;
 /**
  * @type CreateCompletionRequestStop
  * Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.
  * @export
  */
-export declare type CreateCompletionRequestStop = Array<string> | string;
+export type CreateCompletionRequestStop = Array<string> | string;
 /**
  *
  * @export
@@ -913,7 +913,7 @@ export interface CreateEmbeddingRequest {
  * Input text to get embeddings for, encoded as a string or array of tokens. To get embeddings for multiple inputs in a single request, pass an array of strings or array of token arrays. Each input must not exceed 8192 tokens in length.
  * @export
  */
-export declare type CreateEmbeddingRequestInput = Array<any> | Array<number> | Array<string> | string;
+export type CreateEmbeddingRequestInput = Array<any> | Array<number> | Array<string> | string;
 /**
  *
  * @export
@@ -1110,12 +1110,12 @@ export declare const CreateImageRequestSizeEnum: {
     readonly _512x512: "512x512";
     readonly _1024x1024: "1024x1024";
 };
-export declare type CreateImageRequestSizeEnum = typeof CreateImageRequestSizeEnum[keyof typeof CreateImageRequestSizeEnum];
+export type CreateImageRequestSizeEnum = typeof CreateImageRequestSizeEnum[keyof typeof CreateImageRequestSizeEnum];
 export declare const CreateImageRequestResponseFormatEnum: {
     readonly Url: "url";
     readonly B64Json: "b64_json";
 };
-export declare type CreateImageRequestResponseFormatEnum = typeof CreateImageRequestResponseFormatEnum[keyof typeof CreateImageRequestResponseFormatEnum];
+export type CreateImageRequestResponseFormatEnum = typeof CreateImageRequestResponseFormatEnum[keyof typeof CreateImageRequestResponseFormatEnum];
 /**
  *
  * @export
@@ -1140,7 +1140,7 @@ export interface CreateModerationRequest {
  * The input text to classify
  * @export
  */
-export declare type CreateModerationRequestInput = Array<string> | string;
+export type CreateModerationRequestInput = Array<string> | string;
 /**
  *
  * @export
